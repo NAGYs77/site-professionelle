@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #1e3a8a;
+  --color-brand-accent: #f97316;
+  --color-facebook: #1877F2;
+  --color-whatsapp: #25D366;
+  --color-instagram: #E4405F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optionnel : Amélioration du rendu des polices */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-infinite-scroll:hover {
+  animation-play-state: paused; 
+}
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 80s linear infinite; 
+}
