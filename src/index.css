@@ -30,4 +30,19 @@ body {
   display: flex;
   width: max-content;
   animation: scroll 80s linear infinite; 
+}@keyframes slideDownReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+.animate-wordpress {
+  opacity: 0; /* Invisible au départ */
+  animation: slideDownReveal 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+

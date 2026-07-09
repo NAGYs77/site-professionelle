@@ -21,7 +21,7 @@ const Horaires = () => {
           </div>
         </div>
         <div className="h-80 rounded-[2.5rem] overflow-hidden">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120000!2d47.5!3d-18.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07da0933758bb%3A0xc39f2854b42f6d4!2sNosybe!5e0!3m2!1sfr!2smg!4v1700000000000" width="100%" height="100%" style={{border:0}}></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206.88014332536764!2d48.27606445642509!3d-13.403987686180447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2213c7d3dd5d9dfd%3A0x1e935912974accba!2sAppelez-moi!5e1!3m2!1sfr!2smg!4v1783585351963!5m2!1sfr!2smg" width="100%" height="100%" style={{border:0}}></iframe>
         </div>
       </div>
     </section>

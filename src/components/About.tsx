@@ -30,10 +30,10 @@ import img28 from '../assets/28.jpg';
 import img29 from '../assets/29.jpg';
 import img30 from '../assets/30.jpg';
 import img31 from '../assets/31.jpg';
-
+import info from '../assets/info.png'
 const About = () => {
   // L'image "Ordinateur / Technicien" que tu as aimée
-  const computerExpertImg = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80";
+  
 
   // Liste ordonnée de tes 31 images pour le défilement
   const images = [
@@ -53,12 +53,12 @@ const About = () => {
           <div className="relative">
             {/* ICI : L'image d'ordinateur que tu as demandée */}
             <img 
-              src={computerExpertImg} 
+              src={info} 
               alt="Expert Maintenance Informatique" 
               className="rounded-[2.5rem] shadow-2xl w-full h-[450px] object-cover border-4 border-white" 
             />
             <div className="absolute -bottom-6 -right-6 bg-brand-accent text-white p-8 rounded-2xl hidden lg:block shadow-xl">
-              <p className="text-4xl font-black">10+</p>
+              <p className="text-4xl font-black">+10</p>
               <p className="font-bold uppercase text-xs tracking-widest">Ans d'expérience</p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const About = () => {
             <h2 className="text-4xl font-black text-brand-primary leading-tight uppercase">Notre Savoir-Faire</h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium">
               Chez <strong className="text-brand-primary">Appelez-Moi</strong>, notre expertise couvre aussi bien 
-              l'informatique de pointe que les installations électriques complexes. 
+              la réparation des materiels informatique de pointe que les installations électriques complexes. 
               Chaque intervention est le fruit d'une rigueur technique inégalée à Madagascar.
             </p>
             <div className="grid gap-4">
@@ -92,17 +92,17 @@ const About = () => {
           
           <div className="relative flex">
             <div className="animate-infinite-scroll flex gap-6 py-4">
-              {scrollingImages.map((img, index) => (
+              {scrollingImages.map((info, index) => (
                 <div 
                   key={index} 
                   className="w-72 h-48 md:w-80 md:h-56 flex-shrink-0 bg-white p-2 rounded-2xl shadow-lg border border-slate-200 overflow-hidden group"
                 >
                   <img 
-                    src={img} 
+                    src={info} 
                     alt={`Chantier ${index + 1}`} 
                     className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-110"
                     
-                    onError={(e) => { (e.target as HTMLImageElement).src = computerExpertImg }}
+                    onError={(e) => { (e.target as HTMLImageElement).src = info }}
                   />
                 </div>
               ))}
