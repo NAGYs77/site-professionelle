@@ -12,7 +12,7 @@ const Contact = () => {
     const formData = new FormData(form);
     
     const data = {
-      accessKey: "sf_1in01cc4acn201878ifk060h", // REMPLACEZ PAR VOTRE CLÉ STATIC FORMS
+      accessKey: import.meta.env.VITE_STATIC_FORMS_ACCESS_KEY, 
       name: formData.get("name"),
       phone: formData.get("phone"),
       email: formData.get("email"),
